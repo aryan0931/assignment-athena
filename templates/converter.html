@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="max-width: 800px; margin: 0 auto;">
+    <header style="text-align: center; margin-bottom: 2rem;">
+        <h1>Universal Converter</h1>
+        <p>Translate Arabic numerals into ancient systems.</p>
+    </header>
+
+    <div class="card">
+        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap;">
+            <input type="number" id="inputNumber" placeholder="Enter a number (e.g., 2024)"
+                style="flex: 1; padding: 1rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 8px; font-size: 1.1rem;">
+
+            <select id="systemSelect"
+                style="padding: 1rem; background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2); color: #fff; border-radius: 8px; font-size: 1.1rem;">
+                <option value="roman">Roman Numerals</option>
+                <option value="mayan">Mayan Numerals</option>
+                <option value="babylonian">Babylonian Numerals</option>
+                <option value="chinese">Chinese Numerals</option>
+            </select>
+
+            <button onclick="convertNumber()" class="btn">Convert</button>
+        </div>
+
+        <div id="resultContainer"
+            style="display: none; margin-top: 2rem; border-top: 1px solid rgba(255,255,255,0.1); padding-top: 2rem;">
+            <h3 style="color: var(--accent-cyan);">Result:</h3>
+            <div id="convertedValue" style="font-size: 2.5rem; margin-bottom: 1rem; font-family: var(--font-serif);">
+            </div>
+
+            <h4>Explanation:</h4>
+            <ul id="explanationList" style="list-style: none; color: var(--text-secondary);"></ul>
+        </div>
+    </div>
+</div>
+{% endblock %}

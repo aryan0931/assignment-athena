@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero" style="text-align: center; padding: 4rem 0;">
+    <h1 class="animate-fade-in">Unlock the <br>Language of Numbers</h1>
+    <p class="animate-fade-in" style="animation-delay: 0.2s; max-width: 600px; margin: 1.5rem auto;">
+        Explore how civilizations across history conceptualized mathematics.
+        From the dots of the Maya to the wedges of Babylon.
+    </p>
+    <div class="cta-group animate-fade-in" style="animation-delay: 0.4s;">
+        <a href="/converter" class="btn">Start Converting</a>
+        <a href="/library" class="btn btn-outline" style="margin-left: 1rem;">Explore Library</a>
+    </div>
+</section>
+
+<section class="features"
+    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; margin-top: 4rem;">
+    <div class="card">
+        <h2>Explore</h2>
+        <p>Dive into detailed guides on Roman, Mayan, Babylonian, and Chinese numeral systems.</p>
+    </div>
+    <div class="card">
+        <h2>Convert</h2>
+        <p>Translate modern numbers into ancient scripts with our smart conversion engine.</p>
+    </div>
+    <div class="card">
+        <h2>Practice</h2>
+        <p>Challenge yourself with Linguistics Olympiad-style puzzles and pattern recognition tasks.</p>
+    </div>
+</section>
+{% endblock %}

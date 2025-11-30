@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<header style="text-align: center; margin-bottom: 3rem;">
+    <h1>Numeral System Library</h1>
+    <p>Discover the logic behind the symbols.</p>
+</header>
+
+<div class="library-grid"
+    style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
+    <!-- Roman -->
+    <div class="card">
+        <h2>Roman Numerals</h2>
+        <p><strong>Origin:</strong> Ancient Rome</p>
+        <p><strong>Base:</strong> 10 (Decimal) with sub-base 5</p>
+        <p>Uses letters (I, V, X, L, C, D, M) combined with additive and subtractive principles.</p>
+    </div>
+
+    <!-- Mayan -->
+    <div class="card">
+        <h2>Mayan Numerals</h2>
+        <p><strong>Origin:</strong> Maya Civilization (Mesoamerica)</p>
+        <p><strong>Base:</strong> 20 (Vigesimal)</p>
+        <p>A positional system using dots (1), bars (5), and a shell symbol for zero. Written vertically.</p>
+    </div>
+
+    <!-- Babylonian -->
+    <div class="card">
+        <h2>Babylonian Numerals</h2>
+        <p><strong>Origin:</strong> Ancient Mesopotamia</p>
+        <p><strong>Base:</strong> 60 (Sexagesimal)</p>
+        <p>The oldest known positional system. Uses two symbols: a vertical wedge (1) and a corner wedge (10).</p>
+    </div>
+
+    <!-- Chinese -->
+    <div class="card">
+        <h2>Chinese Numerals</h2>
+        <p><strong>Origin:</strong> Ancient China</p>
+        <p><strong>Base:</strong> 10 (Decimal)</p>
+        <p>Uses characters for digits 0-9 and multipliers (10, 100, 1000, etc.). Highly regular structure.</p>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div style="max-width: 800px; margin: 0 auto;">
+    <header style="text-align: center; margin-bottom: 2rem;">
+        <h1>Practice Zone</h1>
+        <p>Test your skills with Linguistics Olympiad-style puzzles.</p>
+    </header>
+
+    <div class="card" id="puzzleCard">
+        <div id="puzzleContent">
+            <h3 id="puzzleQuestion" style="margin-bottom: 1.5rem;">Loading puzzle...</h3>
+
+            <div id="optionsContainer"
+                style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; margin-bottom: 1.5rem;">
+                <!-- Options will be injected here -->
+            </div>
+
+            <div id="feedback" style="display: none; padding: 1rem; border-radius: 8px; margin-top: 1rem;"></div>
+        </div>
+
+        <button onclick="loadPuzzle()" class="btn btn-outline" style="margin-top: 1rem;">Next Puzzle</button>
+    </div>
+</div>
+
+<script>
+    // Auto-load puzzle on page load
+    document.addEventListener('DOMContentLoaded', function () {
+        loadPuzzle();
+    });
+</script>
+{% endblock %}
