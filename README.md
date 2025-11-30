@@ -1,4 +1,4 @@
-# Walkthrough - Global Numeral Systems Explorer
+Global Numeral Systems Explorer
 
 I have successfully built the **Chronos Global Numeral Explorer**, an interactive web application that teaches users about Roman, Mayan, Babylonian, and Chinese numeral systems.
 
